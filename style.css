@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    background-color: black;
+}
+h1 {
+    color: deeppink;
+    font-weight: bolder !important;
+    text-shadow: 3px 3px 6px rgba(255,0,150,0.6);
+}
+.canvas-container {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background.png");
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: deeppink;
+    border-radius: 1rem;
+}
+.canvas {
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.canvas-body-content {
+    margin: auto;
+    padding: 1rem;
+}
+#btnColor {
+    display: none;
+}
+#txtLine {
+    width: 4rem;
+}

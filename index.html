@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Paint</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="canvas-container text container-flex">
+        <div class="topBar canvas-body-content"></div>
+        <div class="canvas-body-content">
+            <h1 id="title" class="display-1">WebPaint</h1>
+        </div>
+
+        <canvas id="myCanvas" class="canvas"></canvas>
+
+        <div class="canvas-body-content">
+            <div class="row">
+                <!--conferir apartir daqui-->
+                <div id="colorSelect" class="option col-auto m-auto">
+                    <label for="Cor" class="form-label">Selecione a Cor</label>
+                    <div class="row">
+                        <div class="option col-auto m-auto">
+                            <select name="Cor" id="colorOptions" class="form-select">
+                                <option value="color">Cor Sólida</option>
+                                <option value="rainbow" selected>Multicor</option>
+                                <option value="random">Cores Aleatórias</option>
+                            </select>
+                        </div>
+                        <div clas="option col-auto m-auto">
+                            <input type="color" id="btnColor" name="btnColor" class="form-control-color">
+                        </div>
+                    </div>                  
+                </div>              
+                <div class="option col-auto m-auto">
+                    <label for="txtLine" class="form-label">Espessura</label>
+                    <input type="number" id="txtLine" name="txtLine" class="form-control mx-auto">
+                </div>
+                <div class="option col-auto m-auto">
+                    <button type="button" id="btnClear" class="btn btn-dark" onclick="clearScreen()">Apagar Tudo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="paint.js"></script>
+</body>
+</html>
